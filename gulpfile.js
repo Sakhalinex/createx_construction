@@ -50,7 +50,7 @@ const htmlInclude = () => {
 }
 
 const imgToApp = () => {
-    return src(['./src/img/**.{jpg, jpeg, png, gif, webp}'])
+    return src('./src/img/**.{jpg,jpeg,png,svg}')
         .pipe(dest('./app/img'))
 }
 
@@ -60,7 +60,7 @@ const resourcesToApp = () => {
 }
 
 const svgToSprite = () => {
-    return src('./src/img/svg/**.svg')
+    return src('./src/img/svg/*.svg')
     .pipe(svgSprite({
         mode: {
             stack: {
@@ -179,8 +179,8 @@ const watchFiles = () => {
 	})
 
     watch('./src/scss/**/*.scss', styles)
-	watch('./src/index.html', htmlInclude)
-    watch(['./src/img/**.{jpg, jpeg, png, gif, webp}'], imgToApp)
+	watch('./src/**/*.html', htmlInclude)
+    watch('./src/img/**.{jpg,jpeg,png,svg}', imgToApp)
     watch('./src/img/**.svg', svgToSprite)
     watch('./src/resources/', resourcesToApp)
     watch('./src/fonts/**.ttf', fonts)

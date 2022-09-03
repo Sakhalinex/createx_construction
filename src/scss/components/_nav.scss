@@ -1,0 +1,15 @@
+.nav {
+    font-size: calcRem(16);
+    margin-left: -116px;
+
+    &__list {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    &__link {
+        color: $gray;
+        font-weight: 700;
+        line-height: 1.6;
+    }
+}

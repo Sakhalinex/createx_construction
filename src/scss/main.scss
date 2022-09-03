@@ -3,8 +3,12 @@
 @import 'fonts';
 @import 'vendor';
 @import 'settings';
+@import 'functions';
 
-//Components
+//Подключение основных компонентов
 @import './components/header';
-
 @import './components/footer';
+
+//Подключение составляющих компонентов
+@import './components/nav';
+@import './components/header-contacts';

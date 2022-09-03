@@ -1,0 +1,11 @@
+.header {
+    padding: calcRem(23) 0;
+
+    &__container {
+        @include flex-all-sb;
+    }
+
+    &--main {
+        background-color: #fff;
+    }
+}
