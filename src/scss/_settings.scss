@@ -8,39 +8,118 @@ html {
     box-sizing: inherit;
   }
   
-  body {
-    margin: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1260px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  color: $ebony;
+  font-weight: 700;
+  font-size: calcRem(72);
+  line-height: 1.3;
+  letter-spacing: 1px;
+  margin: 0 0 calcRem(24) 0;
+
+  &--home {
+    color: #fff;
+
+    
+    span {
+      color: $primary;
+    }
   }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .is-hidden {
-    display: none !important;
-  }
-  
-  .btn-reset {
-    border: none;
-    padding: 0;
-    background: transparent;
-    cursor: pointer;
-  }
-  
-  .list-reset {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+}
+
+.main-subtitle {
+  font-size: calcRem(46);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.main-descr {
+  margin: 0;
+  font-size: calcRem(20);
+  line-height: 1.5;
+  color: $storm;
+
+  &--home {
+    color: #fff;
   }
 
-  .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 1260px;
+  &--small {
+    font-weight: 400;
+    font-size: calcRem(18);
   }
+}
+
+.btn {
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+
+  &-small {
+    font-size: calcRem(12);
+    line-height: 36px;
+    padding: 0 24px;
+  }
+
+  &-regular {
+    font-size: calcRem(14);
+    line-height: 44px;
+    padding: 0 32px;
+  }
+
+  &-large {
+    font-size: calcRem(16);
+    line-height: 50px;
+    padding: 0 39px;
+  }
+
+  &-stroke {
+    border: 1px solid #fff;
+
+    &-primary {
+      border-color: $primary;
+    }
+  }
+
+  &-fill {
+    background-color: $primary;
+  }
+}

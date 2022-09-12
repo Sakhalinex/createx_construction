@@ -1,0 +1,19 @@
+.hero {
+    color: #fff;
+    background-color: rgb(131, 131, 131);
+    background-image: url('../img/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 220px 0 353px 0;
+
+    &__content {
+        max-width: 573px;
+    }
+
+    &__btns {
+        display: flex;
+        column-gap: 25px;
+        margin-top: 62px;
+    }
+}

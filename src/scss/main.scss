@@ -1,12 +1,13 @@
 @import 'vars';
 @import 'mixins';
+@import 'functions';
 @import 'fonts';
 @import 'vendor';
 @import 'settings';
-@import 'functions';
 
 //Подключение основных компонентов
 @import './components/header';
+@import './components/hero';
 @import './components/footer';
 
 //Подключение составляющих компонентов
