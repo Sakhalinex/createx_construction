@@ -181,7 +181,7 @@ const watchFiles = () => {
     watch('./src/scss/**/*.scss', styles)
 	watch('./src/**/*.html', htmlInclude)
     watch('./src/img/**.{jpg,jpeg,png,svg}', imgToApp)
-    watch('./src/img/**.svg', svgToSprite)
+    watch('./src/img/svg/**.svg', svgToSprite)
     watch('./src/resources/', resourcesToApp)
     watch('./src/fonts/**.ttf', fonts)
     watch('./src/fonts/**.ttf', fontsStyle)
