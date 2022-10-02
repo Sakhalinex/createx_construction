@@ -1,0 +1,59 @@
+.mission {
+    $mission-gap: 94px;
+    margin-bottom: 271px;
+    
+    background-color: #fff;
+    &__list {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: calc($mission-gap * 2);
+    }
+
+    &__item {
+        text-align: center;
+        padding-top: 74px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 48px 48px;
+        position: relative;
+
+        &:not(:last-child)::after {
+            content: '';
+            background-image: url('../img/divider.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: calc(-1 * $mission-gap);
+        }
+
+        &--quality {
+            background-image: url('../img/quality.svg');
+        }
+
+        &--safety {
+            background-image: url('../img/safety.svg');
+        }
+
+        &--comfort {
+            background-image: url('../img/comfort.svg');
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        font-weight: 700;
+        color: $ebony;
+    }
+
+    &__descr {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 13px;
+        color: $storm;
+    }
+}
