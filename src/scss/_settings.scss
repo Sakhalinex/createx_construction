@@ -95,8 +95,8 @@ ul, li {
 
   &-regular {
     font-size: calcRem(14);
-    line-height: 44px;
-    padding: 0 32px;
+    line-height: 42px;
+    padding: 0 31px;
   }
 
   &-large {
@@ -108,7 +108,7 @@ ul, li {
   &-stroke {
     border: 1px solid #fff;
 
-    &-primary {
+    &--primary {
       border-color: $primary;
     }
   }
