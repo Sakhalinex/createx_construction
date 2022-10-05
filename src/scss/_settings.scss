@@ -87,33 +87,29 @@ ul, li {
   border: 1px solid transparent;
   letter-spacing: 0.5px;
 
-  &-small {
+  &--small {
     font-size: calcRem(12);
     line-height: 36px;
     padding: 0 24px;
   }
 
-  &-regular {
+  &--regular {
     font-size: calcRem(14);
     line-height: 42px;
     padding: 0 31px;
   }
 
-  &-large {
+  &--large {
     font-size: calcRem(16);
     line-height: 50px;
-    padding: 0 39px;
+    padding: 0 38.9px;
   }
 
-  &-stroke {
+  &--stroke {
     border: 1px solid #fff;
-
-    &--primary {
-      border-color: $primary;
-    }
   }
 
-  &-fill {
+  &--fill {
     background-color: $primary;
   }
 }
