@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/portfolio-slider.min.css"],"names":[],"mappings":"AAAA,kBACE,WAAA,KAEF,2BACE,QAAA,KACA,gBAAA","file":"portfolio-slider.min.css","sourcesContent":[".portfolio-slider {\n  margin-top: 47px;\n}\n.portfolio-slider__wrapper {\n  display: flex;\n  justify-content: space-between;\n}"]}
