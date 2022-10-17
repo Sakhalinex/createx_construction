@@ -1,0 +1,11 @@
+.see-more {
+    @include flex-all-center;
+    column-gap: 40px;
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.5;
+        color: $ebony;
+    }
+}

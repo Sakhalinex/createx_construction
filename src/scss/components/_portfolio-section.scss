@@ -1,23 +1,27 @@
 .portfolio-section {
     background-color: #fff;
-    padding-bottom:120px;
+    padding-bottom: 120px;
 
     &__top {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        margin-bottom: 47px;
     }
 
     &__title {
         margin: 0;
         padding-bottom: 12px;
     }
+
+    &__portfolio-slider {
+        margin-bottom: 80px;
+    }
 }
 
 .portfolio-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column-center;
+    overflow: hidden;
     padding-bottom: 23px;
     border-radius: 4px;
     box-shadow: 
