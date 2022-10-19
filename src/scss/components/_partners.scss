@@ -1,0 +1,13 @@
+.partners {
+    padding: 81px 0 170px 0;
+    background: $grayBg;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+} 
