@@ -21,9 +21,11 @@
 
 .portfolio-item {
     @include flex-column-center;
+    height: 440px;
     overflow: hidden;
     padding-bottom: 23px;
     border-radius: 4px;
+    transition: box-shadow 0.4s ease-in-out;
     box-shadow: 
         0 80px 80px -20px rgba(154, 156, 165, 0.08), 
         0 30px 24px -10px rgba(154, 156, 165, 0.05), 
@@ -31,20 +33,11 @@
         0 4px 4px -4px rgba(30, 33, 44, 0.03);
     background: #fff;
 
-    &--active {
-        .btn {
-            display: block;
-         }
-
-         img {
-            height: 277px;
-         }
-    }
-
     &__img {
         border-radius: inherit;
         height: 345px;
         width: 390px;
+        transition: height 0.2s ease-in-out;
     }
 
     &__title {
@@ -63,7 +56,24 @@
     }
 
     &__btn {
-       display: none;
        margin-top: 23px;
+       transition: opacity 0.4s ease-in-out;
+       opacity: 0;
+    }
+
+    &:hover {
+        .btn {
+            opacity: 1;
+         }
+
+         img {
+            height: 277px;
+         }
+         
+         box-shadow: 
+            0 80px 80px -20px rgba(154, 156, 165, 0.16),
+            0 30px 24px -10px rgba(154, 156, 165, 0.1),
+            0 12px 10px -6px rgba(154, 156, 165, 0.08),
+            0 4px 4px -4px rgba(30, 33, 44, 0.05);
     }
 }
